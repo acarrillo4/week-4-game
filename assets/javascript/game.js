@@ -41,12 +41,14 @@ $(document).ready(function() {
         if (randomNum === userScore) {
             wins++;
             $("#wins").text(wins);
+            alert("CONGRATULATIONS - YOU WON!")
             reset();
         }
         // When the userScore is greater than randomNum, the user gets a win added
         else if (randomNum < userScore) {
             losses++;
             $("#losses").text(losses);
+            alert("Womp, womp womp - YOU LOST!")
             reset();
         }
     }
