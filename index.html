@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystals Game</title>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Federo" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Creates the Overall Grid -->
+    <div class="container">
+        <!-- Row 1 -->
+        <div id="title" class="row">
+            <div class="col-md-12">
+                <h1 class="font-weight-bold">Crystals Collector</h1>
+            </div>
+        </div>
+        <!-- Row 2 -->
+        <div id="description" class="row">
+            <div class="col-md-12">
+                <h3>Game Rules</h3>
+                <p>You will be given a random number at the start of the game. There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to random number.You lose the game if your total score goes above the random number. The value of each crystal is hidden from you, until you click on it. Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+        </div>
+        <!-- Row 3 -->
+        <div id="gameScores" class="row">
+            <!-- Column 1 -->
+            <div id="blue" class="col-md-3">
+                <h3>Number: </h3>
+                <h1 id="randomNum"></h1>
+                <img id="crystal1" src="assets/images/crystal1.png" alt="Blue Crystal">
+                <p id="ranNum1"></p>
+            </div>
+            <!-- Column 2 -->
+            <div id="green" class="col-md-3">
+                <h3>Score: </h3>
+                <h1 id="userScore">0</h1>
+                <img id="crystal2" src="assets/images/crystal2.png" alt="Green Crystal">
+                <p id="ranNum2"></p>
+            </div>
+            <!-- Column 3 -->
+            <div id="purple" class="col-md-3">
+                <h3>Wins:</h3>
+                <h1 id="wins"></h1>
+                <img id="crystal3" src="assets/images/crystal3.png" alt="Purple Crystal">
+                <p id="ranNum3"></p>
+            </div>
+            <!--Column 4 -->
+            <div id="orange" class="col-md-3">
+                <h3>Losses:</h3>
+                <h1 id="losses"></h1>
+                <img id="crystal4" src="assets/images/crystal4.png" alt="Orange Crystal">
+                <p id="ranNum4"></p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+body {
+	background-image: url("../images/background.png");
+}
+
+.container {
+	width: 600;
+	color: white;
+	font-family: 'Federo', sans-serif;
+}
+#description {
+	font-size: 20px;
+}
+
+div {
+	text-align: center;
+}
+
+.row {
+	margin:8px;
+}
+
+h1 {
+	font-size: 65px;
+}
+img {
+	margin-top: 20px;
+}
+img:hover {
+	filter: brightness(150%);
+}
+/*There is no reset.css file - my page is styled using bootstrap, which already includes a reset*/
